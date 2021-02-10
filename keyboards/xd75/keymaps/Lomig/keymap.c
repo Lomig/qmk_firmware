@@ -32,22 +32,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * .--------------------------------------------------------------------------------------------------------------------------------------.
  * | FN     | $      | "      | «      | »      | (      | )      | ESC    | @      | +      | -      | /      | *      | =      | %      |
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-----------------|
- * | TAB    | TAB    | B      | E_ACUT | P      | O      | E_GRAV | DEL    | ^      | V      | D      | L      | J      | Z      | W      |
+ * | TAB    |        | B      | E_ACUT | P      | O      | E_GRAV | DEL    | ^      | V      | D      | L      | J      | Z      | W      |
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-----------------+--------|
- * | CAP LK | CAP LK | A      | U      | I      | E      | ,      | BK SP  | C      | T      | S      | R      | N      | M      | CEDIL  |
+ * | CAP LK |        | A      | U      | I      | E      | ,      | BK SP  | C      | T      | S      | R      | N      | M      | CEDIL  |
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------------------------+--------|
- * | LSHIFT | E_CIRC | A_GRAV | Y      | X      | .      | K      | ENTER  | ,      | Q      | G      | H      | F      | UP     | RSHIFT |
+ * | LSHIFT | E_CIRC | A_GRAV | Y      | X      | .      | K      |        | ,      | Q      | G      | H      | F      | UP     | RSHIFT |
  * |--------+--------+--------+--------+--------+-----------------+--------+--------+--------+--------+-----------------+--------+--------|
- * | LCTRL  | LALT   | LGUI   | FN UP  | FN DWN | SPACE  | SPACE  | ENTER  | SPACE  | SPACE  | RGUI   | RALT   | LEFT   | DOWN   | RIGHT  |
+ * | LCTRL  | LALT   | LGUI   | FN UP  | FN DWN | SPACE  |        | ENTER  |        | SPACE  | RGUI   | RALT   | LEFT   | DOWN   | RIGHT  |
  * '--------------------------------------------------------------------------------------------------------------------------------------'
  */
 
   [_BP] = LAYOUT_ortho_5x15( /* Bepo */
     MO(_FN), BP_DLR,  BP_DQOT, BP_LGIL, BP_RGIL, BP_LPRN, BP_RPRN, KC_ESC,  BP_AT,   BP_PLUS, BP_MINS, BP_MINS, BP_ASTR, BP_EQL,  BP_PERC,
-    KC_TAB,  KC_TAB,  BP_B,    BP_ECUT, BP_P,    BP_O,    BP_EGRV, KC_DEL,  BP_DCRC, BP_V,    BP_D,    BP_L,    BP_J,    BP_Z,    BP_W,
-    KC_CAPS, KC_CAPS, BP_A,    BP_U,    BP_I,    BP_E,    BP_COMM, KC_BSPC, BP_C,    BP_T,    BP_S,    BP_R,    BP_N,    BP_M,    BP_CCED,
-    KC_LSFT, BP_ECRC, BP_AGRV, BP_Y,    BP_X,    BP_DOT,  BP_K,    KC_ENT,  BP_APOS, BP_Q,    BP_G,    BP_H,    BP_F,    KC_UP,   KC_RSFT,
-    KC_LCTL, KC_LALT, KC_LGUI, TG(_FN), TG(_FN), KC_SPC,  KC_SPC,  KC_ENT,  KC_SPC,  KC_SPC,  KC_RGUI, KC_RALT, KC_LEFT, KC_DOWN, KC_RIGHT
+    KC_TAB,  _______, BP_B,    BP_ECUT, BP_P,    BP_O,    BP_EGRV, KC_DEL,  BP_DCRC, BP_V,    BP_D,    BP_L,    BP_J,    BP_Z,    BP_W,
+    KC_CAPS, _______, BP_A,    BP_U,    BP_I,    BP_E,    BP_COMM, KC_BSPC, BP_C,    BP_T,    BP_S,    BP_R,    BP_N,    BP_M,    BP_CCED,
+    KC_LSFT, BP_ECRC, BP_AGRV, BP_Y,    BP_X,    BP_DOT,  BP_K,    _______, BP_APOS, BP_Q,    BP_G,    BP_H,    BP_F,    KC_UP,   KC_RSFT,
+    KC_LCTL, KC_LALT, KC_LGUI, TG(_FN), TG(_FN), KC_SPC,  _______, KC_ENT,  _______, KC_SPC,  KC_RGUI, KC_RALT, KC_LEFT, KC_DOWN, KC_RIGHT
   ),
 
 /* FUNCTION
